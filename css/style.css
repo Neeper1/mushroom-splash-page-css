@@ -148,6 +148,7 @@ input:focus {
     text-transform: uppercase;
     padding: 1.125em 0;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 .btn-primary {
@@ -158,9 +159,9 @@ input:focus {
     padding: 1.125em;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #72493d;
+button:hover,
+button:focus {
+    background-color: #b39c4d;
 }
 
 

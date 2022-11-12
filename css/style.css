@@ -1,0 +1,209 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    color: #707175;
+}
+
+
+
+
+/* ======= Typography ======= */
+h1 {
+    font-size: 2.25rem; /*36*/
+    text-shadow: 0 3px 3px #3d3d3d;
+}
+
+
+h2 {
+    font-size: 1.75rem;/*28*/
+}
+
+h1,
+.intro-top-text,
+.intro-bottom-text {
+    text-shadow: 0 4px 3px #3d3d3d;
+}
+
+.intro,
+.main-content {
+    font-size: 1rem; /*20*/
+}
+
+.intro-top-text {
+    font-size: 1rem;
+    border-top: 5px solid whitesmoke;
+    text-transform: capitalize;
+    order: -1;
+    margin: 0 auto;
+
+}
+
+.intro-bottom-text {
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 400px;
+}
+
+.subheading {
+    text-transform: uppercase;
+    margin-top: 1em;
+    color: #f5ac72;
+}
+
+.fine-print {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.main-content p {
+    line-height: 1.8;
+}
+
+.italicize {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+
+
+
+/* ======== Flex Containers ======= */
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ======= Intro Layout ======== */
+
+.intro {
+    background: #c08552 url("/images/guido-blokker-flower-mushrooms-unsplash.jpg");
+    background-size: cover;
+    color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+    text-align: center;
+}
+
+.intro-text {
+    backdrop-filter: blur(6px);
+    padding: 0 0.3em;
+}
+
+
+
+
+
+/* ======= Main Content Layout ======= */
+.main-content {
+    align-items: center;
+}
+
+.img-main {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main-content p,
+form {
+    max-width: 450px;
+}
+
+
+
+
+/* ======= Form ======= */
+input,
+.btn {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 4px;
+}
+
+input {
+    text-align: center;
+    padding: 0.8em;
+    margin-bottom: 0.9em;
+    border: 1.5px solid #707175;
+}
+
+input:focus {
+    outline: none;
+    background-color: #e5e8b6;
+    border-color: #5e3023;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 1.125em 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #c08552, #552322);
+    border: none;
+    color: #fff;
+    margin-top: 1em;
+    padding: 1.125em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #72493d;
+}
+
+
+/* ======= Media Queries ======= */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem/*40*/
+    }
+
+    h2 {
+        font-size: 2rem;  /*32*/
+    }
+
+    .subheading {
+        font-size: 1.5rem; /*20*/
+    }
+    
+    body {
+        display: flex;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        padding: 0 1em;
+    }
+
+    .intro {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .intro-top-text {
+        margin-bottom: 2em;
+    }
+
+    .intro-bottom-text {
+        margin-top: 2em;
+    }
+}
